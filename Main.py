@@ -99,3 +99,27 @@ def handleResources():
                 invalidOptionMessage()
         pause()
 
+def main():
+    while True:
+        choice = showMainMenu()
+        match choice:
+            case "1":
+                handleResolved()
+            case "2":
+                handleTickets()
+            case "3":
+                handleOperations()
+            case "4":
+                handleStructures()
+            case "5":
+                handleResources()
+            case "0":
+                print("\n¡Gracias por utilizar el sistema! Hasta luego.\n")
+                break
+            case _:
+                invalidOptionMessage()
+                pause()
+
+
+if __name__ == "__main__":
+    main()
