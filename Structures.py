@@ -17,9 +17,7 @@ def inventoryIndex():
 
 
 def employeeDictionary():
-    clearConsole()
-    # Consulta información de un empleado mediante una clave.
-    # Controla KeyError y considera si get() podría ser una alternativa.
+    clearConsole() 
     print("--- DICCIONARIO DE EMPLEADOS ---")
 
     employees = {
