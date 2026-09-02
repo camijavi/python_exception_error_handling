@@ -8,9 +8,12 @@ def drawHeader(title):
 
 def showMainMenu():
     clearConsole()
-    drawHeader("SISTEMA DE EJERCICIOS CONDICIONALES")
-    print(" [1] Ejercicios con 'If Simples'")
-    print(" [2] Ejercicios con 'If Anidados'")
+    drawHeader("SISTEMA DE EJERCICIOS: MANEJO DE EXCEPCIONES")
+    print(" [1] Ejercicios Resueltos")
+    print(" [2] Ejercicios de Entradas")
+    print(" [3] Ejercicios de Operaciones")
+    print(" [4] Ejercicios de Estructuras")
+    print(" [5] Ejercicios de Recursos")
     print(" [0] Salir")
     print("-" * 55)
     return input("Seleccione una opción: ").strip()
@@ -24,7 +27,7 @@ def showResolvedMenu():
     print(" [3] Acceso a una lista")
     print(" [4] Consulta de cliente")
     print(" [5] Cierre garantizado")
-    menuFooter()
+    return menuFooter()
     
 def showTicketsMenu():
     clearConsole()
@@ -34,7 +37,7 @@ def showTicketsMenu():
     print(" [3] Calificación")
     print(" [4] Edad para registro")
     print(" [5] Tres entradas consecutivas")
-    menuFooter()
+    return menuFooter()
 
 def showOperationsMenu():
     clearConsole()
@@ -44,7 +47,7 @@ def showOperationsMenu():
     print(" [3] Conversión de moneda")
     print(" [4] Tipos incompatibles")
     print(" [5] Cálculo de comisión")
-    menuFooter()
+    return menuFooter()
 
 def showStructuresMenu():
     clearConsole()
@@ -52,11 +55,11 @@ def showStructuresMenu():
     print(" [1] Índice de inventario")
     print(" [2] Diccionario de empleados")
     print(" [3] Menú de opciones")
-    menuFooter()
+    return menuFooter()
 
 def showResourcesMenu():
     clearConsole()
     drawHeader("EJERCICIOS: RECURSOS")
     print(" [1] Archivo de reportes")
     print(" [2] Importación controlada")
-    menuFooter()
+    return menuFooter()

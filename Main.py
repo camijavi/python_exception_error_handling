@@ -1,6 +1,6 @@
 from Operations import (averageSales, proportionalDiscount, currencyConversion, incompatibleTypes, commissionCalculator)
 from Tickets import (productPrice, productsQty, grades, ageRegistration, threeConsecutiveEntries)
-from Stuctures import (inventoryIndex, employeeDictionary, optionsMenu)
+from Structures import (inventoryIndex, employeeDictionary, optionsMenu)
 from Resolved import (ageConversion, secureDivision, accessToAList, customerInquiry, guaranteedClosure)
 from Resources import (reportArchive, controlledImport)
 
@@ -13,7 +13,7 @@ def handleResolved():
         option = showResolvedMenu()
         match option:
             case "1":
-                print("\n" + ageRegistration())
+                print("\n" + ageConversion())
             case "2":
                 print("\n" + secureDivision())
             case "3":
@@ -71,7 +71,7 @@ def handleOperations():
 
 def handleStructures():
     while True:
-        option = showResourcesMenu()
+        option = showStructuresMenu()
         match option:
             case "1":
                 print("\n" + inventoryIndex())
