@@ -81,8 +81,6 @@ def incompatibleTypes():
                 result = num1 + num2
             except ValueError:
                 print("ERROR: debe ingresar un valor numérico. Intente nuevamente.\n")
-            except ZeroDivisionError:
-                print("ERROR: no se puede dividir por cero.")
             else:
                 print(f"El resultado es: {result}")
                 break
