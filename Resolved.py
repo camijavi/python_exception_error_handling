@@ -44,13 +44,13 @@ def accessToAList():
     clearConsole()
     print("--- ACCESO A UNA LISTA ---")
 
-    names = ["Jack", "Cocoa", "Max", "Ted","Robin","Summer","Negrita","Chelincita","Otto"]
+    myDogsNames= ["Jack", "Cocoa", "Max", "Ted","Robin","Summer","Negrita","Chelincita","Otto"]
 
-    print(names)
+    print(myDogsNames)
     while True:
         try:
             position = int(input("Ingrese la posición a la cuál desea acceder: "))
-            print(names[position])
+            print(myDogsNames[position])
             break
         except ValueError:
              print("ERROR: debe ingresar un numéro entero. Intente nuevamente.\n")
